@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Popup from "reactjs-popup";
 import styles from "./LC-Details.module.css";
-import detailsImage from "../../../assets/images/detailsImage.png";
+import detailsImage from "/src/assets/images/detailsImage.png";
 
 import {
     FaRegCalendarAlt,

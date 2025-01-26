@@ -21,7 +21,7 @@ const LearningCircleWithUpcomingMeets: React.FC<
 
     const navigate = useNavigate();
     const handleCreateButton = () => {
-        navigate("/dev/lc-create");
+        navigate("/dashboard/learningcircle/lc-create");
     };
 
     return (

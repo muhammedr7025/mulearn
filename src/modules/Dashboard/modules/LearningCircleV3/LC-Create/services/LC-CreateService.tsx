@@ -1,5 +1,5 @@
-import { reqInstance } from "../../../services/baseReqInstance";
-import { InterestGroupRoutes } from "../../../services/dasboardEndpoints";
+import { reqInstance } from "../../services/baseReqInstance";
+import { InterestGroupRoutes } from "../../services/dasboardEndpoints";
 import { ApiResponse } from "../types/LC-CreateTypes";
   
 export const getInterestGroups = async () : Promise<ApiResponse|null> =>{
