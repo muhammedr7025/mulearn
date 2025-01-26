@@ -1,0 +1,522 @@
+/* General Styles */
+.learningCircle {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Long Image Section */
+  .longImageSection {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .longImage {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  /* Header Section */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .headerL {
+    width: 50%;
+    align-items: flex-start;
+  }
+  
+  .headerL p {
+    text-align: justify;
+  }
+  
+  .headerR {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #0056b3;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .headerActions {
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    display: flex; /* Ensure buttons stay in a row */
+    gap: 15px;
+  }
+  
+  .actionButton2 {
+    padding: 9px 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap;
+  }
+
+  .actionButton span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .actionButton2 span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* .actionButton:hover {
+    background-color: #0056b3;
+  } */
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+  }
+  
+  .statItem {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .statValue {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0.5em;
+  }
+  
+  .statLabel {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Stat Item with Button */
+  .statItemWithButton {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .viewPeersButton {
+    padding: 0;
+    font-size: 16px;
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 5px;
+    transform: translate(10px, -10px);
+    margin-left: 5px;
+  }
+  
+  .viewPeersButton:hover {
+    color: #0056b3;
+  }
+  
+  /* Meetings Section */
+  .meetings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .meetingCard {
+    background-color: #dae7fe;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor : pointer;
+  }
+  
+  /* Buttons Section */
+  .cardButtons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .actionButtontop {
+    padding: 9px 80px; /* Increased width */
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: static;
+    margin-right: 15px; /* Added/increased right margin */
+    white-space: nowrap;
+  }
+  
+  .actionButton {
+    padding: 9px 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #007bff;
+    background-color: white;
+    border: 2px solid #007bff;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap;
+  }
+  
+  /* Card Header */
+  .cardHeader h3 {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  /* Card Details */
+  .cardDetails {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .detailItem {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  
+  /* Interested Avatars */
+  .interestedSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatarGroup {
+    display: flex;
+  }
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-right: -10px;
+  }
+  
+  .interestedSection span {
+    font-size: 14px;
+    color: #555;
+    margin-left: 10px;
+  }
+  
+  /* Card Body */
+  .cardBody strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .cardBody p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* New Created By Section */
+  .createdBy {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .createdByAvatar {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .createdBy span {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+  }
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .avatartop {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .avatarandname {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 0.5em;
+  }
+  
+  .locationInfo {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4em;
+ 
+  }
+  
+  .locationItem {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+
+  .popup {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 66.125rem;
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    height: 38.125rem;
+  }
+  
+  .popup h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .scheduleForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .scheduleForm label {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .scheduleForm input,
+  .scheduleForm textarea,
+  .scheduleForm select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    color: #333333;
+    outline: none;
+    margin-top: 5px;
+    width: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  
+  .scheduleForm input:focus,
+  .scheduleForm textarea:focus,
+  .scheduleForm select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  .scheduleForm textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  
+  .popupActions {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .popupActions button {
+    padding: 10px 80px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    
+  }
+  
+  .saveButton {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .saveButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancelButton {
+    background-color: #f8f9fa;
+    color: #333333;
+    border: 1px solid #0056b3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cancelButton:hover {
+    background-color: #e2e6ea;
+    color: #000000;
+  }
+ /* Toggle Wrapper */
+/* Toggle Wrapper */
+.toggleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.toggleWrapper input{
+  display: none;
+}
+
+/* Toggle Label */
+.toggleLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555555;
+}
+
+/* Toggle Switch */
+.toggleSwitch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  margin-left: 2rem;
+}
+
+/* Visible Toggle Button (span) */
+.toggleSwitchSpan {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #d4d0d0;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hide the checkbox input */
+.toggleInput {
+  display: none; /* This hides the checkbox completely */
+}
+
+/* When checkbox is checked, change background and move the button */
+.toggleInput:checked + .toggleSwitchSpan {
+  background-color: #007bff;
+  transform: translateX(26px); /* Move the switch button to the right */
+}
+
+/* Optional hover effect on the switch */
+.toggleSwitch:hover {
+  background-color: #b8daff;
+}
+
+
+
+  
+  
+  .dtd{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  .dtd input,.dtd select{
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #333333;
+    outline: none;
+    margin-top: 5px;
+    width: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 17.125rem;
+  }
+
+
+
+  

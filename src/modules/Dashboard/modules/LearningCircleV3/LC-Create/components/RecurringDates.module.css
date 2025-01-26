@@ -1,0 +1,164 @@
+.card {
+  position: relative;
+  top: 100%;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 14px; /* Reduced font size */
+  text-align: left; /* Align text to the left */
+  width: 375px; /* Adjust card width */
+  background-color: white;
+  padding: 16px;
+}
+
+.title {
+  font-size: 16px; /* Slightly larger title */
+  margin-bottom: 12px;
+}
+
+.frequencyButtons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.frequencyButton {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.frequencyButton.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.optionsContainer {
+  margin-top: 12px;
+}
+
+.infoText {
+  margin-bottom: 8px;
+}
+
+.dayButtons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for the 4x7 layout */
+  gap: 8px; /* Spacing between the buttons */
+  justify-content: center;
+}
+
+.dayButton {
+  width: 36px; /* Ensures a perfect circle */
+  height: 36px; /* Ensures a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove extra padding */
+  border: 1px solid #DAE7FE;
+  background-color: #DAE7FE;
+  cursor: pointer;
+  border-radius: 50%; /* Makes the button circular */
+  font-size: 14px; 
+  line-height: 1;
+}
+
+.dayButton.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Base styles are already designed for small to medium screens */
+
+/* For small devices (max-width: 576px) */
+@media (max-width: 576px) {
+.card {
+  width: 100%; /* Full-width card for small screens */
+  padding: 12px; /* Adjust padding */
+}
+
+.title {
+  font-size: 14px; /* Slightly smaller title */
+}
+
+.frequencyButton {
+  padding: 6px 10px; /* Reduce padding */
+  font-size: 12px; /* Smaller font for buttons */
+}
+
+.dayButton {
+  width: 30px; /* Smaller circle size */
+  height: 30px;
+  font-size: 12px; /* Adjust font size for smaller circles */
+}
+}
+
+/* For tablets and medium screens (min-width: 577px and max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+.card {
+  width: 340px; /* Adjust card width */
+  padding: 14px; /* Slightly smaller padding */
+}
+
+.title {
+  font-size: 15px; /* Slightly smaller title */
+}
+
+.frequencyButton {
+  padding: 8px 10px; /* Adjust padding for medium screens */
+}
+
+.dayButton {
+  width: 34px; /* Slightly smaller circle size */
+  height: 34px;
+}
+}
+
+/* For larger screens (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+.card {
+  width: 360px; /* Adjust card width */
+}
+
+.title {
+  font-size: 16px; /* Default title size */
+}
+
+.frequencyButton {
+  padding: 8px 12px; /* Default button padding */
+}
+
+.dayButton {
+  width: 36px; /* Default circle size */
+  height: 36px;
+  font-size: 14px; /* Default font size */
+}
+}
+
+/* For extra-large screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+.card {
+  width: 400px; /* Slightly wider card */
+  padding: 20px; /* Add more padding for extra space */
+}
+
+.title {
+  font-size: 18px; /* Larger title for readability */
+}
+
+.frequencyButton {
+  padding: 10px 14px; /* Larger padding for buttons */
+}
+
+.dayButton {
+  width: 40px; /* Larger circle size */
+  height: 40px;
+  font-size: 16px; /* Slightly larger font size */
+}
+}
+

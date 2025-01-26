@@ -1,0 +1,1 @@
+import { reqInstance } from "../../../services/baseReqInstance";
