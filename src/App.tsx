@@ -55,6 +55,7 @@ import YourLC from "./modules/Dashboard/modules/LearningCircleV2/pages/YourLC/Yo
 import MoreInfoLC from "./modules/Dashboard/modules/LearningCircleV2/pages/moreInfoLC/MoreInfoLC";
 import AttendeeReport from "./modules/Dashboard/modules/LearningCircleV2/pages/AttendeeReport/AttendeeReport";
 import LCReport from "./modules/Dashboard/modules/LearningCircleV2/pages/LCReport/LCReport";
+import LearningCircleV3 from "./modules/Dashboard/modules/LearningCircleV3/pages/LearningCircleV3";
 import UserInterest from "./modules/Common/Authentication/pages/Onboarding/UserInterest/UserInterest";
 import PathFinder from "./modules/Common/Authentication/pages/Onboarding/PathFinder/PathFinder";
 import RegisterPage from "./modules/Common/Authentication/pages/Onboarding/Register/Register";
@@ -734,7 +735,8 @@ function App() {
                         // },
                         {
                             path: "learningcircle",
-                            element: <LearningCircleLanding />
+                            // element: <LearningCircleLanding />
+                            element: <LearningCircleV3 />
                         },
                         {
                             path: "learningcircle/your-circles",
