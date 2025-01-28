@@ -25,7 +25,7 @@ const LearningCircleCard: React.FC<LearningCircleCardProps> = ({
 
   const navigate = useNavigate();
   const handleCardClick = () => {
-    navigate("/dev/lc-details"); 
+    navigate("/dashboard/learningcircle/lc-details"); 
   };
 
 

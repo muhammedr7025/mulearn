@@ -17,6 +17,7 @@ interface Event {
 interface Circle {
     image: string;
     title: string;
+    ig?: string;
     subtitle: string;
     joinedText: string;
 }
@@ -41,6 +42,7 @@ interface GetLearningCirclesResponse {
 const LearningCircleV3: React.FC = () => {
     const [upcomingEvents, setUpcomingEvents] = useState<Event[]>([]);
     const [allCircles, setAllCircles] = useState<Circle[]>([]);
+    const imageArray = ["1.png", "2.png", "3.png","4.png","5.png","6.png"];
 
     useEffect(() => {
         const fetchLearningCircles = async () => {
@@ -53,9 +55,9 @@ const LearningCircleV3: React.FC = () => {
                             circle.next_meetup?.is_scheduled
                         )
                         .map((circle: LearningCircleResponse) => ({
-                            image: "path/to/default/image.png",
                             title: circle.next_meetup?.title || "Untitled Event",
-                            subtitle: circle.ig || "No Interest Group",
+                            image: "path/to/default/image.png",
+                            ig: circle.ig || "No Interest Group",
                             date: new Date(
                                 circle.next_meetup?.meet_time || ""
                             ).toLocaleDateString(),
@@ -74,15 +76,19 @@ const LearningCircleV3: React.FC = () => {
                         }));
 
                     const circles: Circle[] = response.response.map(
-                        (circle: LearningCircleResponse) => ({
-                            image: "path/to/default/image.png",
-                            title: circle.ig || "Unnamed Circle",
-                            subtitle:
-                                circle.org || "No Organization Specified",
-                            joinedText: `${
-                                circle.recurrence || 0
-                            } people you might know have joined`
-                        })
+                        (circle: LearningCircleResponse) => {
+                            const randomImage = imageArray[Math.floor(Math.random() * imageArray.length)];
+                            return {
+                                image: `/assets/learningCircles/${randomImage}`,
+                                title: circle.ig || "Unnamed Circle",
+                                subtitle:
+                                    circle.org || "No Organization Specified",
+                                joinedText: `${
+                                    circle.recurrence || 0
+                                } people you might know have joined`
+                            }
+
+                        }
                     );
 
                     setUpcomingEvents(events);
